@@ -17,7 +17,6 @@ export default {
     methods: {
         stopTimer(){
             this.reactionTime = Date.now() - this.startTime;
-            console.log(this.reactionTime);
             this.$emit('end', this.reactionTime);
         }
     },
